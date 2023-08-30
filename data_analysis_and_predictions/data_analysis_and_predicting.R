@@ -209,7 +209,7 @@ cf_lr
 #chi-squared test filtering critical success factors from p-value <= 0.1
 project_cf_data <- get_significant_factors(software_project_data, 0.1)
 
-#splitting the dataset to train (90%) and test (10%) stes
+#splitting the dataset to train (90%) and test (10%) sets
 ind <- sample(2, nrow(project_cf_data), replace = TRUE, prob = c(0.9, 0.1))
 project_data_train <- project_cf_data[ind==1,]
 project_data_test <- project_cf_data[ind==2,]
@@ -232,7 +232,7 @@ lr_macro_performance_measures
 #chi-squared test filtering critical success factors from p-value <= 0.01
 project_cf_data <- get_significant_factors(software_project_data, 0.01)
 
-#splitting the dataset to train (90%) and test (10%)
+#splitting the dataset to train (90%) and test (10%) sets
 ind <- sample(2, nrow(project_cf_data), replace = TRUE, prob = c(0.9, 0.1))
 project_data_train <- project_cf_data[ind==1,]
 project_data_test <- project_cf_data[ind==2,]
