@@ -26,8 +26,8 @@ get_na_count_by_str_detect_all_cols(software_project_data)
 #experienced_project_manager - has 6 N/A values
 
 #replacing N/A's in column experienced_project_manager to value = No
-software_project_data$experienced_project_manager[software_project_data$experienced_project_manager
-                                                  == "N/A (If no Project Manager was involved)"] <- 'No'
+software_project_data$experienced_project_manager[software_project_data$project_manager== "No"] <- 'No'
+
 #checking for duplicate projects
 software_project_data %>%
   add_count(project_type, 
