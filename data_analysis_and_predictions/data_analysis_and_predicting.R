@@ -65,7 +65,7 @@ rf_macro_performance_measures <- get_macro_performance_measures(
   rf_per_class_performance_measures$f_measure)
 rf_macro_performance_measures
 
-#tunning 'ntree' for best 'mtry' in random forest
+#tuning 'ntree' for best 'mtry' in random forest
 models <- list()
 for (ntree in c(10, 20, 30, 40, 50 ,60, 100, 200, 500, 1000, 1500, 2000, 2500)) {
   fit_model <- train(successful~., data=project_data_train, 
