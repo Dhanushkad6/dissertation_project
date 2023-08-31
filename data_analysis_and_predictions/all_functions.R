@@ -56,7 +56,7 @@ get_invalid_value_count_all_cols <- function(data_set){
   }
 }
 
-#hypothesis Testing - Returns the dependent factors within the given threshold 
+#hypothesis testing - Returns the dependent factors within the given threshold 
 #and plots the significance of success factors 
 get_significant_factors <- function(data_set, threshold){
   
@@ -77,9 +77,9 @@ get_significant_factors <- function(data_set, threshold){
     print(col)
     print(chisq)
     
-    #check if the success factor is significant or not under/on the give threshold
+    #check if the success factor is significant or not under/on the given threshold
     if(chisq$p.value <= threshold){
-      print('Reject H0 - Depenedent factor')
+      print('Reject H0 - Dependent factor')
       
       #if significant add the factor to the dependent factors list
       dependent_list[[col]] <- software_project_data[[col]]
