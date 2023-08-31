@@ -153,7 +153,7 @@ varImpPlot(rf)
 
 #predicting results using Random Forest
 predicted <-predict(mtry_tuned_rf, project_data_test)
-#confusion matrix with TP,TN,FP,FN
+#confusion matrix with TP, TN, FP, FN
 cf <- confusionMatrix(as.factor(predicted), as.factor(project_data_test$successful))
 predicted
 cf
