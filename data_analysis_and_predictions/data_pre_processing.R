@@ -1,4 +1,4 @@
-#importing pcakages required for data pr-processing
+#importing packages required for data pre-processing
 library(readr)
 library(dplyr)
 library(tidyr)
