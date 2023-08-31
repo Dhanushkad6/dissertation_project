@@ -56,7 +56,7 @@ get_invalid_value_count_all_cols <- function(data_set){
   }
 }
 
-#hypothesis Testing - Returns the dependent factors withing the given threshold 
+#hypothesis Testing - Returns the dependent factors within the given threshold 
 #and plots the significance of success factors 
 get_significant_factors <- function(data_set, threshold){
   
