@@ -89,7 +89,7 @@ get_significant_factors <- function(data_set, threshold){
         factor_significance[nrow(factor_significance) + 1,] <- c(col, chisq$p.value)
       
     }else{
-      print('Fails to reject H0 - Indepenedent factor')
+      print('Fails to reject H0 - Independent factor')
     }
     
     print('--------------------------------------------------------------------')
